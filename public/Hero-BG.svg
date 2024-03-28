@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600px" height="750px" viewBox="0 0 1600 750" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Hero-BG</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1600" height="750"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="THI_Homepage_md_2a" transform="translate(71.000000, -25.000000)">
+            <g id="Hero-BG" transform="translate(-71.000000, 25.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g id="BG-Graphics" mask="url(#mask-2)" stroke="#444444" stroke-width="0.5">
+                    <g transform="translate(-26.000000, -49.919315)">
+                        <polygon id="Stroke-1" points="0 826 826 826 826 0 0 0"></polygon>
+                        <line x1="528" y1="824" x2="528" y2="2" id="Stroke-3"></line>
+                        <path d="M0,0 L0,528 L528,528 C528,236.393893 291.606107,0 0,0 Z" id="Stroke-4"></path>
+                        <line x1="528" y1="528" x2="826" y2="528" id="Stroke-5"></line>
+                    </g>
+                </g>
+                <g id="BG-Graphics" mask="url(#mask-2)" stroke="#444444" stroke-width="0.5">
+                    <g transform="translate(1212.917416, 363.000000) scale(-1, -1) translate(-1212.917416, -363.000000) translate(799.917416, -50.000000)">
+                        <polygon id="Stroke-1" points="-0.0825842339 825.919315 825.917416 825.919315 825.917416 -0.0806845966 -0.0825842339 -0.0806845966"></polygon>
+                        <line x1="527.917416" y1="823.919315" x2="527.917416" y2="1.9193154" id="Stroke-3"></line>
+                        <path d="M-0.0825842339,-0.0806845966 L-0.0825842339,527.919315 L527.917416,527.919315 C527.917416,236.313208 291.523523,-0.0806845966 -0.0825842339,-0.0806845966 Z" id="Stroke-4"></path>
+                        <line x1="531.917416" y1="527.919315" x2="825.917416" y2="527.919315" id="Stroke-5"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
