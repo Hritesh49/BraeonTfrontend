@@ -32,7 +32,8 @@ function Offering() {
                 <div className='OfferingmainSectionHeader'>
                     <h5>Our Offerings</h5>
                     <Divider sx={{ width: 100, height: 2, backgroundColor: '#00ffff' }} orientation="horizontal" />
-                    <h3>With 100% coverage in all ServiceNow workflows, we know workflow better than anyone else.</h3>
+                    <h3>All ServiceNow, all the time.</h3>
+                    <p>With 100% coverage in all ServiceNow workflows, we know workflow better than anyone else.</p>
                 </div>
                 <div className='OfferingmainBox'>
                     {Offerings.map((field, index) => (

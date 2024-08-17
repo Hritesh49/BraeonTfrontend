@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem 0;
+    padding: 3rem 0;
     text-align: start;
 }
 
@@ -22,22 +22,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    text-align: center;
+    text-align: start;
 }
 
 .OfferingmainSectionHeader h5 {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
     line-height: 2rem;
-    letter-spacing: 3px;
+    letter-spacing: .1875rem;
     text-transform: uppercase;
     color: #00ffff;
 }
 
 .OfferingmainSectionHeader h3 {
     font-weight: bolder;
-    color: white;
+    font-size: 1.5rem;
+    margin-top: .625rem;
+}
+
+.OfferingmainSectionHeader p {
+    font-weight: 200;
     font-size: 1rem;
+    margin-top: .625rem;
 }
 
 .OfferingmainBox {
@@ -47,25 +53,25 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem !important;
+    gap: .5rem !important;
     flex-wrap: wrap;
-    padding: 40px 0px;
+    padding: 2.5rem 0rem;
 }
 
 .OffersBox {
     display: flex;
-    max-width: 350px;
-    height: 500px;
+    max-width: 21.875rem;
+    height: 25rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background: rgba(20, 20, 20, 0.367);
-    border-radius: 20px;
+    border-radius: 1.25rem;
     padding: 0.525rem;
     position: relative;
-    backdrop-filter: blur(18px);
+    backdrop-filter: blur(1.125rem);
     transition: transform 0.5s ease-in-out;
-    border: 2px solid #4040402a;
+    border: .125rem solid #4040402a;
     overflow: hidden;
     cursor: pointer;
 }
@@ -78,8 +84,8 @@
     content: '';
     position: absolute;
     background: radial-gradient(#00ffff66, transparent, transparent);
-    width: 700px;
-    height: 700px;
+    width: 43.75rem;
+    height: 43.75rem;
     transform: translate(-50%, -50%);
     transition: 0.5s trasform;
     top: 100%;
@@ -89,11 +95,11 @@
 .OffersBox::after {
     content: '';
     position: absolute;
-    inset: 2px;
-    border-radius: 18px;
+    inset: .125rem;
+    border-radius: 1.125rem;
     background: rgba(16, 16, 16, 0.65);
     opacity: 1;
-    border: 2px solid rgba(255, 255, 255, 0.4);
+    border: .125rem solid rgba(255, 255, 255, 0.4);
     transition: .5s border ease;
 }
 
@@ -135,17 +141,14 @@
 }
 
 .OffersTextdiv h4 {
-    font-weight: bolder;
-    color: white;
-    font-size: 1.875rem;
-    font-family: 'Poppins, sans-serif';
+    font-weight: bold;
+    font-size: 1.1875rem;
 }
 
 .OffersTextdiv p {
     font-weight: lighter;
-    color: white;
-    font-size: 1.15rem;
-    font-family: 'Poppins, sans-serif';
+    color: whitesmoke;
+    font-size: 1rem;
 }
 
 
@@ -170,24 +173,28 @@
         width: 85%;
     }
 
-    .OfferingmainSection h3 {
-        font-size: 1.5rem;
+    .OfferingmainSectionHeader h3 {
+        font-size: 2.8125rem;
     }
 
-    .OfferingmainSection p {
+    .OfferingmainSectionHeader p {
         font-size: 1rem;
     }
 
+    .OfferingmainSectionHeader p {
+        font-size: 1.125rem;
+    }
+
     .OffersBox {
-        height: 400px;
+        height: 25rem;
     }
 
     .OffersTextdiv h4 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .OffersTextdiv p {
-        font-size: 0.9rem;
+        font-size: 1.125rem;
     }
 }
 

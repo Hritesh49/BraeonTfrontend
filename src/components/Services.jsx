@@ -16,7 +16,7 @@ function Services() {
         <img className='visualBox' src={visual} />
       </div>
       <div className="ServiceBoxTextdiv">
-        <h3>{title}</h3>
+        <h4>{title}</h4>
         {content.map((line, index) => (
           <p key={index}>{line}</p>
         ))}

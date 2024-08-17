@@ -93,14 +93,16 @@ function Testimonials() {
 
     return (
         <div className="TestimonialsmainBack">
-            <div className="TestimonialsmainHeader">
-                <h5>Testimonials</h5>
-                <Divider sx={{ width: 60, height: 2, backgroundColor: '#00ffff' }} orientation="horizontal" />
-                <h3>Driving value across the ecosystem</h3>
+            <div>
+                <div className="TestimonialsmainHeader">
+                    <h5>Testimonials</h5>
+                    <Divider sx={{ width: 60, height: 2, backgroundColor: '#00ffff' }} orientation="horizontal" />
+                    <h3>Driving value across the ecosystem</h3>
+                </div>
+                <Slider {...settings}>
+                    {fields.map(field => createDiv(field.pic, field.player, field.title, field.content, field.video))}
+                </Slider>
             </div>
-            <Slider {...settings}>
-                {fields.map(field => createDiv(field.pic, field.player, field.title, field.content, field.video))}
-            </Slider>
             {isDivVisible && (
                 <div ref={videoDivRef} className="TestimonialsVideoPlayer">
                     <button className="PlayercloseButton" onClick={() => toggleDivVisibility(null)}>✖</button>

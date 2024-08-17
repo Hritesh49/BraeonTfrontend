@@ -11,6 +11,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -18,4 +19,19 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #005151;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00a5a5;
 }
