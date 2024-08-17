@@ -1,12 +1,15 @@
-import { Stack } from '@mui/material'
 import React, { useState } from 'react';
-import Lottie from "lottie-react";
-import Visual from "../assets/Animation.json";
+import "../assets/Contact.css";
 
 function ContactUs() {
 
-    const [name, setName] = useState('');
+    const [firstname, setFirstName] = useState('');
+    const [lastname, setLastName] = useState('');
     const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [company, setCompany] = useState('');
+    const [like, setLike] = useState('');
+    const [hear, setHear] = useState('');
     const [message, setMessage] = useState('');
 
     const handleSubmit = (e) => {
@@ -17,39 +20,73 @@ function ContactUs() {
     };
 
     return (
-        <div style={{ width: "100%", display: 'flex', justifyContent: "center", alignItems: 'center', padding: '50px 0px 80px' }}>
-            <Stack
-                gap={10}
-                sx={{
-                    width: { xs: "90%", sm: '92%', md: '85%', lg: "80%" },
-                    height: "auto",
-                    display: 'flex',
-                    flexDirection: 'row',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                }}>
-                <Stack sx={{ flex: "1", display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
-                    <Lottie style={{ width: "100%", filter: "drop-shadow(0px 0px 18px #00ffff)" }} animationData={Visual} />
-                </Stack>
-                <Stack gap={4} sx={{ flex: "1", display: 'flex', justifyContent: 'center', alignItems: 'flex-start',height:'inherit', }}>
-                    <h2>Send us a message</h2>
-                    <form style={{gap:"24px",display:"flex",flexDirection:'column',justifyContent:"center",alignItems:'center'}} onSubmit={handleSubmit}>
-                        <div>
-                            <label>Name:</label>
-                            <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+        <div className='ContactmainBack'>
+            <div className='ContactmainbackSection'>
+                <div className='ContactmainVisualdiv'>
+                    <img className='lottiediv' src="/ConnectUs.svg" alt="" />
+                </div>
+                <div className='ContactmainFormdiv'>
+                    <h2>Let's Connect.</h2>
+                    <p>Contact our team to start the conversation.</p>
+                    <form className='ContactmainForm' onSubmit={handleSubmit}>
+                        <div className='FormName'>
+                            <fieldset className='Formfields'>
+                                <label className='Formlabels'> First Name:</label>
+                                <input className='Formtext' type="text" value={firstname} required aria-required="true" onChange={(e) => setFirstName(e.target.value)} />
+                            </fieldset>
+                            <fieldset className='Formfields'>
+                                <label className='Formlabels'> Last Name:</label>
+                                <input className='Formtext' type="text" value={lastname} required aria-required="true" onChange={(e) => setLastName(e.target.value)} />
+                            </fieldset>
                         </div>
-                        <div>
-                            <label>Email:</label>
-                            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                        <fieldset className='Formfields'>
+                            <label className='Formlabels'>Corporate Email*</label>
+                            <input className='Formtext' type="email" value={email} required aria-required="true" onChange={(e) => setEmail(e.target.value)} />
+                        </fieldset>
+                        <fieldset className='Formfields'>
+                            <label className='Formlabels'>Phone*</label>
+                            <input className='Formtext' type="number" value={phone} required aria-required="true" onChange={(e) => setPhone(e.target.value)} />
+                        </fieldset>
+                        <fieldset className='Formfields'>
+                            <label className='Formlabels'>Company Name*</label>
+                            <input className='Formtext' type="text" value={company} required aria-required="true" onChange={(e) => setCompany(e.target.value)} />
+                        </fieldset>
+                        <fieldset className='Formfields'>
+                            <label className='Formlabels'>I would like to*</label>
+                            <select value={like} onChange={(e) => setLike(e.target.value)} name="I would like to">
+                                <option value="Please Select">Please Select</option>
+                                <option value="Discuss how Braeontech can help me solve a business challenge">Discuss how Braeontech can help me solve a business challenge</option>
+                                <option value="Explore Career Opportunities">Explore Career Opportunities</option>
+                                <option value="Join Braeontech's awesome partner network">Join Braeontech's awesome partner network</option>
+                                <option value="None of the above,but equally important">None of the above,but equally important</option>
+                            </select>
+                        </fieldset>
+                        <fieldset className='Formfields'>
+                            <label className='Formlabels'>How did you hear about us?*</label>
+                            <select value={hear} onChange={(e) => setHear(e.target.value)} name="How did you hear about us?*">
+                                <option value="Please Select">Please Select</option>
+                                <option value="Event">Event</option>
+                                <option value="Referral">Referral</option>
+                                <option value="Social Media">Social Media</option>
+                                <option value="Web Search">Web Search</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </fieldset>
+                        <fieldset className='Formfields'>
+                            <label className='Formlabels'>Comments</label>
+                            <textarea className='Formtext message' value={message} onChange={(e) => setMessage(e.target.value)} />
+                        </fieldset>
+                        <p>From time to time, we would like to contact you about our services, as well as other content that may be of interest to you. If you consent to us contacting you for this purpose, please tick below:</p>
+                        <div className='FormConsent'>
+                            <input className='check' type="checkbox" />
+                            <p>I agree to receive other communications from Braeontech.</p>
                         </div>
-                        <div>
-                            <label>Message:</label>
-                            <textarea value={message} onChange={(e) => setMessage(e.target.value)} />
-                        </div>
-                        <button type="submit">Submit</button>
+                        <p>You can unsubscribe from these communications at any time here.</p>
+                        <p>By clicking the button below, you consent to allow Braeontech to store and process the personal information submitted above to provide you the content requested.</p>
+                        <button className='FormSubmit' type="submit">Contact Us!</button>
                     </form>
-                </Stack>
-            </Stack>
+                </div>
+            </div>
         </div>
     )
 }

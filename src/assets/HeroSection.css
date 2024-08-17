@@ -1,0 +1,186 @@
+.HeromainBack {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    position: relative;
+    top: 0rem;
+}
+
+.HeromainBackCircle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    height: 100vh;
+    background: radial-gradient(#00ffff, transparent, transparent);
+    filter: blur(5rem);
+}
+
+.HeromainBackGlossy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #ffffff22 3%, #ffffff00 99%);
+    backdrop-filter: blur(5.625rem);
+    height: 100vh;
+    padding: 4rem 0rem 0rem;
+}
+
+
+.HeromainSection {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.HeromainTextsection {
+    display: flex;
+    gap: .75rem;
+    filter: drop-shadow(0.125rem 0.125rem 6.25rem rgba(0, 255, 255, 0));
+    height: inherit;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.HeromainTextsection h5 {
+    font-size: 1rem;
+    font-weight: lighter;
+    text-align: start;
+    width: 100%;
+}
+
+.HeromainTextsection h1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: start;
+    text-shadow: 0.0625rem -0.0625rem 1.5rem rgba(255, 255, 255, 0);
+    color: #ffffff;
+    width: 100%;
+}
+
+.HeromainTextsection h3 {
+    font-size: 1.375rem;
+    font-weight: bold;
+    text-align: start;
+    width: 100%;
+}
+
+.learn-more {
+    background-color: rgba(255, 255, 255, 0);
+    border: .0625rem solid #00ffff;
+    color: #ffffff;
+    border-radius: 1.5rem;
+    padding: .75rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    box-shadow: 0 .125rem 1rem .25rem #00ffff46, inset 0 0 .75rem .125rem #00ffff8f;
+    transition: .5s background-color, .5s border-color, .6s color;
+}
+
+.learn-more:hover {
+    background-color: #00ffff;
+    border-color: rgb(0, 0, 0);
+    color: black;
+    cursor: pointer;
+}
+
+.HeromainVisualsection {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.HeromainVisualsection img {
+    max-width: 100%;
+    height: inherit;
+    filter: drop-shadow(0rem 2rem 5rem #f185d23b);
+
+}
+
+
+@media (min-width: 600px) {
+
+    .HeromainSection {
+        width: 92%;
+        gap: 0rem;
+    }
+
+    .HeromainTextsection {
+        flex: 2;
+    }
+
+    .HeromainTextsection h5 {
+        font-size: 1.25rem;
+    }
+
+    .HeromainTextsection h1 {
+        font-size: 2rem;
+    }
+
+    .HeromainTextsection h3 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .HeromainSection {
+        width: 85%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .HeromainTextsection h5 {
+        font-size: 1.5rem;
+    }
+
+    .HeromainTextsection h1 {
+        font-size: 3rem;
+    }
+
+    .HeromainTextsection h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .HeromainSection {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .HeromainSection {
+        flex-direction: column-reverse;
+    }
+
+    .arrows {
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+
+    .HeromainBackCircle {
+        width: 20rem;
+    }
+}
+
+@media (max-width: 599px) {
+
+    .HeromainSection {
+        width: 90%;
+        height: auto;
+    }
+
+    .HeromainTextsection {
+        flex: 1;
+    }
+}

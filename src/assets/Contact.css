@@ -1,0 +1,239 @@
+.ContactmainBack {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 60px;
+}
+
+.ContactmainbackSection {
+    width: 90%;
+    /* Default for xs */
+    height: auto;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: start;
+    gap: 24px;
+}
+
+.ContactmainVisualdiv {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+}
+
+.lottiediv {
+    width: 100%;
+    height: auto;
+    /* filter: drop-shadow(0px 0px 12px #ffffff8b); */
+}
+
+.ContactmainFormdiv {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: inherit;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.ContactmainFormdiv h2 {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.ContactmainFormdiv p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.875rem;
+}
+
+.ContactmainForm {
+    gap: 24px;
+    display: flex;
+    height: inherit;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.FormName {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Formfields {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.Formlabels {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.Formfields select {
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid #292e32;
+    border-radius: 4px;
+    background-color: #181818;
+    color: #ffffff;
+    margin: 0 0 30px;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: left;
+}
+
+.Formfields select option {
+    background-color: #181818;
+    color: #ffffff !important;
+    height: max-content;
+}
+
+.Formfields select option:first-child {
+    color: #999 !important;
+}
+
+/* Hover effect */
+.Formfields select:hover {
+    border-color: #00ffffdf;
+}
+
+/* Focus effect */
+.Formfields select:focus {
+    border-color: #00ffff;
+    outline: none;
+}
+
+.Formtext {
+    background-color: #181818;
+    border: 1px solid #292e32;
+    border-radius: 8px;
+    padding: 20px;
+    outline: none;
+    margin: 0 0 30px;
+    font-weight: 400;
+    width: 100% !important;
+    font-size: 17px;
+    color: whitesmoke;
+}
+
+.message {
+    height: 150px !important;
+}
+
+.FormSubmit {
+    background-color: rgba(255, 255, 255, 0);
+    border: .0625rem solid #00ffff;
+    color: #ffffff;
+    border-radius: 1.5rem;
+    padding: 14px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    box-shadow: 0 .125rem 1rem .25rem #00ffff62, inset 0 0 .75rem .125rem #00ffff62;
+    min-width: 260px;
+    transition: .5s background-color;
+}
+
+.FormSubmit:hover {
+    background-color: #00ffff;
+    border: .0625rem solid rgba(255, 255, 255, 0.504);
+    color: black;
+    cursor: pointer;
+}
+
+.ContactmainForm p {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.875rem;
+}
+
+.FormConsent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.check {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    appearance: none;
+    border-radius: 4px;
+}
+
+.check:hover {
+    border-color: #00ffff;
+}
+
+.check:checked {
+    background-color: #00ffff;
+    border-color: #ffffff65;
+}
+
+.check:checked::before {
+    content: '✔';
+    /* Unicode checkmark character */
+    display: block;
+    color: rgb(0, 0, 0);
+    /* Checkmark color */
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    /* Center the checkmark */
+}
+
+
+
+/* For small screens and above (sm) */
+@media (min-width: 600px) {
+    .ContactmainbackSection {
+        width: 92%;
+    }
+}
+
+/* For medium screens and above (md) */
+@media (min-width: 768px) {
+    .ContactmainbackSection {
+        width: 85%;
+        flex-direction: row !important;
+    }
+    .FormName{
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 900px) {
+
+    .ContactmainFormdiv h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+/* For large screens and above (lg) */
+@media (min-width: 1024px) {
+    .ContactmainbackSection {
+        width: 80%;
+    }
+}

@@ -1,0 +1,104 @@
+.ServicemainBack {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0px 100px;
+}
+
+.ServicemainHeader {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    text-align: start;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.ServicemainHeader h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #00ffff;
+}
+
+.ServicemainHeader h3 {
+    font-weight: bolder;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.ServicemainBox {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.ServiceSection {
+    width: 100%;
+}
+
+.ServiceBox {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.visualBox {
+    width: 60px;
+    height: auto;
+}
+
+
+@media (min-width: 600px) {
+
+    .ServicemainBack {
+        width: 92%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .ServicemainBack {
+        width: 85%;
+    }
+
+    .ServicemainHeader h3 {
+        font-size: 45px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .ServicemainBack {
+        width: 80%;
+    }
+
+    .ServiceSection {
+        width: 50%;
+    }
+
+    .ServiceBox {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 599px) {
+
+    .ServicemainBack {
+        width: 90%;
+        height: auto;
+    }
+}

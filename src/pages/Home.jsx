@@ -2,18 +2,18 @@ import React from 'react';
 import Herosection from '../components/Herosection';
 // import About from '../components/About';
 import Offering from '../components/Offering';
-import Testimonial from '../components/Testimonial';
-import Service from '../components/Service';
+import Testimonials from '../components/Testimonials';
 import ContactUs from '../components/ContactUs';
+import Services from '../components/Services';
 
 const Home = () => {
   return (
     <div style={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', }}>
       <Herosection />
       {/* <About /> */}
-      <Service />
+      <Testimonials />
+      <Services />
       <Offering />
-      <Testimonial />
       <ContactUs />
     </div>
   )

@@ -47,7 +47,7 @@ const Menu = ({ navbarHeight }) => {
                             display: 'flex',
                             flexDirection: 'column',
                             width: '100%',
-                            height: `calc(100vh - ${navbarHeight}px)`,
+                            height: `calc( 100vh - ${navbarHeight})`,
                             justifyContent: 'center',
                             alignItems: 'center',
                             position: 'fixed',

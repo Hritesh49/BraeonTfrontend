@@ -1,0 +1,219 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(0rem);
+    transition: background-color 0.3s ease, position 0.2s ease-in-out;
+    z-index: 9999;
+    top: 0;
+    height: auto;
+    position: absolute;
+    transition: top .7s ease-out, position .65s ease;
+}
+
+.navbar.scrolled {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar.hidden {
+    top: -8rem;
+}
+
+.navbar.active {
+    top: 0;
+}
+
+.navbar-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-box {
+    width: 100%;
+    padding: 0.625rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-logo-img {
+    width: 6.25rem;
+    height: auto;
+}
+
+.navbar-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+.search-all {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-end;
+    color: whitesmoke;
+}
+
+.searchbar-container {
+    display: none;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease, display .5s;
+}
+
+.searchbar-container.show {
+    display: flex;
+    opacity: 1;
+}
+
+.Searchbar {
+    width: 100vw !important;
+}
+
+.links-desktop {
+    display: none;
+}
+
+.menu-icon {
+    display: flex;
+}
+
+.navbar-icon {
+    font-size: 2rem;
+    color: whitesmoke;
+    transition: color .5s;
+}
+.navbar-icon:hover {
+    color: #9ffffff3;
+}
+
+.navbar-link {
+    cursor: pointer;
+    color: #F5F5F5;
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: text-decoration .5s ease-out, color .5s;
+}
+
+.navbar-link:hover {
+    color: #9ffffff3;
+    text-decoration: underline;
+}
+
+.contact-link {
+    background-color: rgba(255, 255, 255, 0);
+    border: .0625rem solid #00ffff;
+    color: #ffffff;
+    border-radius: 1.5rem;
+    padding: .5rem 2rem;
+    box-shadow: 0 .125rem 1rem .25rem #00ffff46, inset 0 0 .75rem .125rem #00ffff8f;
+    transition: .5s background-color, .5s border-color, .6s color;
+}
+
+.contact-link:hover {
+    background-color: #00ffff;
+    border-color: rgb(0, 0, 0);
+    color: black;
+    cursor: pointer;
+}
+
+.navbar-drawer {
+    z-index: 99999 !important;
+}
+
+.navbar-drawer .MuiDrawer-paper {
+    width: 100%;
+    height: 100vh;
+    background: black url('/bg.webp') no-repeat center right;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.drawer-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.drawer-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    width: 100%;
+    height: inherit;
+    gap: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .navbar-logo-img {
+        height: 4rem;
+    }
+
+    .navbar-wrapper {
+        width: 90%;
+    }
+}
+
+@media (min-width: 600px) {
+    .navbar-logo-img {
+        height: 6rem;
+    }
+
+    .navbar-wrapper {
+        width: 85%;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .navbar-wrapper {
+        width: 80%;
+    }
+
+    .links-desktop {
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: none !important;
+    }
+
+}
